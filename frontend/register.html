@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/register.css">
+</head>
+<body>
+    
+        <form class="register">
+
+            <h1> Register</h1>
+
+            <p id="message"></p>
+            <div id="loader">
+                <div class="spinner"> </div>
+                <span>Redirecting to login...</span>
+            </div>
+
+            <label for="name">Name: </label>
+            <br>
+            <input id="name" type="text" autofocus required>
+            <br>
+            <br>
+
+            <label for="email">Email: </label>
+            <br>
+            <input id="email" type="email" placeholder="example@gmail.com" required>
+            <br>
+            <br>
+
+            <label for="pwd">Password: </label>
+            <br>
+            <input id="pwd" type="password" required placeholder="Password must be at least 8 characters">
+            <br>
+            <br>
+
+            <button id="btn-submit">Submit</button>
+
+             <p>Already registered? <a href="login.html">Login</a></p>
+
+
+        </form>
+
+        <script src="./js/register.js"></script>
+    
+</body>
+</html>
