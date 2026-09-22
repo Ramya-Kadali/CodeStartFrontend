@@ -3,12 +3,17 @@ body {
     min-height: 100vh;
 
     background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
     color:white;
 }
 
+.register-box
+{
+    height:90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .register {
     width: 400px;
     padding: 25px;

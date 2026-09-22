@@ -5,6 +5,17 @@ const email = document.getElementById("email");
 const pwd = document.getElementById("pwd");
 const message = document.getElementById("message");
 const loader = document.getElementById("loader");
+const header = document.getElementById("header");
+
+fetch("./header.html")
+    .then(response => response.text())
+    .then(data => {
+
+        document.getElementById("header").innerHTML = data;
+
+        document.getElementById("home").style.display = "inline";
+        document.getElementById("login").style.display = "inline";
+    });
 
 form.addEventListener("submit", async function(event) {
     event.preventDefault();
