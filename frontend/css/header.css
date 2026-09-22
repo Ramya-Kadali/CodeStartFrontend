@@ -37,10 +37,11 @@ header nav a{
 }
 
 #logout{
-    border: 1px solid #FFD700;
+    background-color:  #FFD700;
+    color:black;
     border-radius: 5px;
     cursor: pointer;
-
+    
 }
 
 .fields:hover{
