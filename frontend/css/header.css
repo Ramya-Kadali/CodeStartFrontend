@@ -30,7 +30,10 @@ header nav a{
     font-size: 1.2em;
     color:white;
     padding:10px;
+    
 }
+
+
 #home,#problems, #register, #login, #logout,#dashboard
 {
     display: none;
@@ -45,7 +48,7 @@ header nav a{
 }
 
 .fields:hover{
-    border: 1px solid #FFD700;
+    border-bottom: 3px solid #FFD700;
     border-radius: 5px;
     
 }
