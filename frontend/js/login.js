@@ -15,11 +15,37 @@ fetch("./header.html")
 
         document.getElementById("header").innerHTML = data;
 
+        const menu_icon = document.getElementById("menu-icon");
+        const menu_section = document.querySelector(".menu-section");
+        const close = document.getElementById("close");
+
+        menu_icon.addEventListener("click", function() {
+            menu_section.style.display = "block";
+        });
+
+        close.addEventListener("click", function() {
+            menu_section.style.display = "none";
+        });
+
         document.getElementById("home").style.display = "inline";
         document.getElementById("register").style.display = "inline";
+        document.getElementById("login").style.display="inline"
+
+
+        document.getElementById("menu-home").style.display = "inline";
+        document.getElementById("menu-register").style.display = "inline";
+        document.getElementById("menu-login").style.display = "inline";
+        
+
+
         document.getElementById("login").style.borderBottom = "3px solid #FFD700";
         document.getElementById("login").style.borderRadius = "5px";
-        document.getElementById("login").style.display="inline"
+
+        document.getElementById("menu-login").style.borderBottom = "3px solid #FFD700";
+        document.getElementById("menu-login").style.borderRadius = "5px";
+
+
+        
     });
 
 
