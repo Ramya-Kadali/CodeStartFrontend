@@ -8,7 +8,8 @@ header{
     position: sticky;
     display:flex;
     top:0;
-    width:100%;
+    width:100vw;
+    box-sizing: border-box;
     justify-content: space-around;
     align-items:center;
     background-color: black;
@@ -23,6 +24,8 @@ header h1 span {
     color: #FFD700;
 }
 
+
+
 header nav a{
     margin: 30px;
     padding:10px;
@@ -34,21 +37,85 @@ header nav a{
 }
 
 
-#home,#problems, #register, #login, #logout,#dashboard
+.fields
 {
     display: none;
-}
+} 
 
 #logout{
-    background-color:  #FFD700;
+    background-color: #FFD700;
     color:black;
     border-radius: 5px;
     cursor: pointer;
     
 }
 
-.fields:hover{
+ .fields:hover{
     border-bottom: 3px solid #FFD700;
     border-radius: 5px;
+    
+}
+
+#menu-icon {
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    display:none;
+    
+}
+
+.menu-section{
+    box-shadow: 0px 1px 10px #FFD700;
+    border-radius: 4px;
+    width:30%;
+    display:none;
+    right: 0;
+    position:absolute;
+    z-index:1000;
+}
+
+#close{
+    background-color: #FFD700;
+    padding:4px;
+    margin:3px;
+    border-radius: 5px;
+    color:black
+}
+.menu-section nav{
+    margin:3px;
+    display:flex;
+    flex-direction: column;
+    
+
+}
+
+.menu-section nav a{
+    color:white;
+    padding:5px;
+    margin:5px;
+    text-decoration: none;
+    
+}
+
+@media (max-width: 768px){
+    header nav {
+        display:none;
+    }
+
+    #menu-icon{
+        display: inline;
+    }
+    .menu-section{
+        display:none;
+    }
+
+    
+}
+
+@media (max-width: 1199px) {
+
+    .menu-section{
+        display:none;
+    }
     
 }
