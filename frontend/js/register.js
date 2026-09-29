@@ -26,12 +26,15 @@ fetch("./header.html")
         });
 
         document.getElementById("home").style.display = "inline";
-        document.getElementById("register").style.display ="inline"
-        document.getElementById("login").style.display = "inline";
+        document.getElementById("register").style.display = "inline";
+        document.getElementById("login").style.display="inline"
+
 
         document.getElementById("menu-home").style.display = "inline";
-        document.getElementById("menu-register").style.display ="inline"
+        document.getElementById("menu-register").style.display = "inline";
         document.getElementById("menu-login").style.display = "inline";
+        
+
 
         document.getElementById("register").style.borderBottom = "3px solid #FFD700";
         document.getElementById("register").style.borderRadius = "5px";
